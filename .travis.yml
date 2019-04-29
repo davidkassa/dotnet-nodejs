@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+language: node_js
+node_js:
+  - "node"
+  
+before_install:
+- docker build -t davidkassa/dotnet-nodejs .
