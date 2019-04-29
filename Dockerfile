@@ -1,8 +1,8 @@
 # TBD? https://github.com/moby/moby/pull/31352
 # ARG NODE_VERSION=latest
 # FROM node:$NODE_VERSION
-FROM mcr.microsoft.com/dotnet/core/sdk:latest
 FROM node:latest as auto-build-trigger
+FROM mcr.microsoft.com/dotnet/core/sdk:latest
 
 MAINTAINER davidkassa <david.kassa@gmail.com>
 
@@ -22,5 +22,6 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 # Commands
 RUN \
   apt-get update && apt-get install -y nodejs \
+  && dotnet --version \
   && node --version \
   && npm --version
