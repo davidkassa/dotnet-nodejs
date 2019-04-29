@@ -21,6 +21,6 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 # Commands
 RUN \
-  apt-get install -y nodejs \
+  apt-get update && apt-get install -y nodejs \
   && node --version \
   && npm --version
