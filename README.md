@@ -1,5 +1,5 @@
 # dotnet-nodejs
-[![](https://images.microbadger.com/badges/image/davidkassa/dotnet-nodejs.svg)](https://microbadger.com/images/davidkassa/dotnet-nodejs "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/davidkassa/dotnet-nodejs.svg)](https://microbadger.com/images/davidkassa/dotnet-nodejs "Get your own commit badge on microbadger.com") [![Build Status](https://travis-ci.org/davidkassa/dotnet-nodejs.svg?branch=master)](https://travis-ci.org/davidkassa/dotnet-nodejs)
+[![](https://images.microbadger.com/badges/image/davidkassa/dotnet-nodejs.svg)](https://microbadger.com/images/davidkassa/dotnet-nodejs "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/davidkassa/dotnet-nodejs.svg)](https://microbadger.com/images/davidkassa/dotnet-nodejs "Get your own commit badge on microbadger.com") [![Build Status](https://travis-ci.com/davidkassa/dotnet-nodejs.svg?branch=master)](https://travis-ci.com/davidkassa/dotnet-nodejs)
 
 Auto-updating [Docker](https://www.docker.com/) image based on [.NET Core](https://dotnet.microsoft.com/) official image with [Node.js](https://nodejs.org/) installed.
 
