@@ -1,7 +1,7 @@
 # TBD? https://github.com/moby/moby/pull/31352
 # ARG NODE_VERSION=latest
 # FROM node:$NODE_VERSION
-FROM node:latest as auto-build-trigger
+FROM node:lts as auto-build-trigger
 FROM mcr.microsoft.com/dotnet/core/sdk:latest
 
 MAINTAINER davidkassa <david.kassa@gmail.com>
@@ -22,5 +22,5 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 # Commands
 RUN apt-get update -yq \
   && apt-get install curl gnupg -yq \
-  && curl -sL https://deb.nodesource.com/setup_12.x | bash \
+  && curl -sL https://deb.nodesource.com/setup_10.x | bash \
   && apt-get install nodejs -yq
