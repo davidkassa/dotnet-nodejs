@@ -7,6 +7,7 @@ services:
 language: node_js
 node_js:
   - "node"
-  
+
 script:
-- docker build -t davidkassa/dotnet-nodejs .
+  - docker build -t davidkassa/dotnet-nodejs .
+  - docker run davidkassa/dotnet-nodejs /bin/sh -c "dotnet --version;node --version;npm --version"
